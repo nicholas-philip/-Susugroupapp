@@ -143,13 +143,8 @@ html{
 /* Search Form Styling */
 .navbar-bottom .search-form {
     position: absolute;
-    top: 60%;
-    right: 10%;
     background: #f4f4f4;
-    width: 350px;
-    height: 28px;
     display: flex;
-    align-items: center;
     transform: scaleY(0);
     transform-origin: top;
     transition: all 0.5s ease;
@@ -162,11 +157,9 @@ html{
 .navbar-bottom .search-form input {
     width: 100%;
     height: 100%;
-    font-size: 20px;
     border: none;
     background: #f4f4f4;
     color: #1A1B1E;
-    padding: 14px;
     text-transform: none;
     outline: none;
 }
@@ -909,13 +902,3 @@ input {
         top: 25%;
     }
 }
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
