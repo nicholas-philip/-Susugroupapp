@@ -9,59 +9,97 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="boxicons-2.0.9/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+                }
+            }
+        }
+    </script>
 </head>
 <body id="home">
 
-    <div class="scroll-up-btn">
+    <!-- <div class="scroll-up-btn">
         <i class="bx bx-up-arrow-alt bx-sm"></i>
-    </div>
+    </div> -->
     <div class="showcase">
         <!-- navbar top section -->
 
-        <div class="navbar-top">
-            <ul class="left">
-                <li><a href="#">Ghana</a></li>
-                <li><a href="#"><i class="bx bxs-time bx-xs"></i> Mon - sat: 8:00 - 10:00</a></li>
-                <li><a href="#"><i class="bx bxs-map bx-xs"></i> Accra St.East legon</a></li>
-                <li><a href="#"><i class="bx bxs-phone bx-xs"></i> +1-700-000-000-00</a></li>
+        <div class="flex flex-row items-center justify-evenly bg-[#000000] p-1 top-0 left-0 right-0 hidden lg:flex">
+            <ul class="left flex flex-row items-center gap-5">
+                <li class="flex flex-row items-center gap-2">
+                    Ghana
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="bx bxs-time bx-xs"></i>
+                  <span>Mon - sat: 8:00 - 10:00</span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                    <i class="bx bxs-map bx-xs"></i>
+                    <span>Accra St.East legon</span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                    <i class="bx bxs-phone bx-xs"></i>
+                    <span>+1-700-000-000-00</span>
+                </li>
             </ul>
-            <ul class="right">
+            <ul class="right flex flex-row items-center gap-3">
                 <li><a href="#"><i class="bx bxl-twitter bx-xs"></i></a></li>
                 <li><a href="#"><i class="bx bxl-facebook bx-xs"></i></a></li>
                 <li><a href="#"><i class="bx bxl-instagram-alt bx-xs"></i></a></li>
             </ul>
         </div>
 
-                <!-- Navbar Bottom Section -->
-            <div class="navbar-bottom">
-                <a href="#home" class="brand-left">susugroupapp</a>
+        <!-- Navbar Bottom Section -->
+        <div class="navbar-bottom flex flex-row items-center justify-between fixed left-0 right-0 p-5">
+            
+            <a href="#home" class="brand-left">susugroupapp</a>
+            
+            <!-- Full Menu -->
+            <ul class="menu-right flex flex-row items-center gap-3 hidden md:flex" id="menu-right">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio">About Us</a>
+                </li>
+                <li>
+                    <a href="#teams">Teams</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
                 
-                <!-- Hamburger Menu Icon -->
-                <div class="hamburger-menu" id="hamburger-menu">
-                    <i class="bx bx-menu bx-sm"></i>
-                </div>
+                <i class="bx bx-search bx-sm p-0 m-0 cursor-pointer" id="search-btn"></i>
                 
-                <!-- Full Menu -->
-                <ul class="menu-right" id="menu-right">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">About Us</a></li>
-                    <li><a href="#teams">Teams</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#"><i class="bx bx-search bx-sm" id="search-btn"></i></a></li>
-                </ul>
+            </ul>
 
-                <!-- Search Form -->
-                <div class="search-form" id="search-form">
-                    <input type="search" name="search-box" id="search-box" placeholder="search here...">
-                    <label for="search-box" class="bx bx-search bx-sm"></label>
-                </div>
-                <div class="auth-buttons">
-                    <button id="login-btn" class="btn">Login</button>
-                    <button id="signup-btn" class="btn">Signup</button>
-                </div>
+            <!-- Search Form -->
+            <div class="search-form hidden md:flex" id="search-form">
+                <input type="search" name="search-box" id="search-box" placeholder="search here...">
             </div>
+            <div class="auth-buttons flex flex-row items-center gap-2 hidden md:flex">
+                <button id="login-btn" class="btn py-2 px-3">Login</button>
+                <button id="signup-btn" class="btn py-2 px-3">Signup</button>
+            </div>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger-menu md:hidden" id="hamburger-menu">
+                <i class="bx bx-menu bx-sm text-[#111] text-[20px]"></i>
+            </div>
+
+        </div>
 
 
        <!-- Showcase content Section -->
@@ -73,66 +111,33 @@
        </div>
     </div> -->
 
- <!-- Hero -->
- <div class="swiper-container slider-1">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <video muted loop autoplay>
-          <source src="https://videos.pexels.com/video-files/3249935/3249935-sd_640_360_25fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/3249935/3249935-sd_640_360_25fps.mp4" type="video/webm" />
-        </video>
-        <div class="slide-caption"><p><span class="text1">A service you can trust </span><br><span class="text2">FAST, SECURE <br>
-          & RELIABLE</span></p></div>
-      </div>
-  
-      <div class="swiper-slide">
-        <video muted loop autoplay>
-          <source src="https://videos.pexels.com/video-files/3254013/3254013-sd_640_360_25fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/3254013/3254013-sd_640_360_25fps.mp4" type="video/webm" />
-        </video>
-        <div class="slide-caption"><p><span class="text1">let help you </span><br><span class="text2">START SAVING </BR> WITH US</span></p></div>
-      </div>
-  
-      <div class="swiper-slide">
-        <video muted loop autoplay>
-          <source src="https://videos.pexels.com/video-files/7735488/7735488-sd_640_360_25fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/6266426/6266426-sd_640_360_25fps.mp4" type="video/webm" />
-        </video>
-        <div class="slide-caption"><p><span class="text1">EASY TRANSACTIONS </span><br><span class="text2">WITHDRAW <br>
-         ANYTIME YOU WANT</span></p></div>
-      </div>
-  
-      <div class="swiper-slide">
-        <img src="https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&w=600" alt="hero image" />
-        <div class="slide-caption"><p><span class="text1">BUILD A BETTER </span><br><span class="text2">FINANCIAL FUTURE <br>
-          WITH US</span></p></div>
-      </div>
-  
-      <div class="swiper-slide">
-        <video muted loop autoplay>
-          <source src="https://videos.pexels.com/video-files/7710771/7710771-sd_960_506_25fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/7114666/7114666-sd_640_360_30fps.mp4" type="video/webm" />
-        </video>
-        <div class="slide-caption"><p><span class="text1">COLLABORATE WITH OTHERS </span><br><span class="text2">TO REACH YOUR<br>
-         FINANCIAL GOALS</span></p></div>
-      </div>
-  
-      <div class="swiper-slide">
-        <img src="https://images.pexels.com/photos/3790639/pexels-photo-3790639.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
-        <div class="slide-caption"><p><span class="text1">INSTANT ACCESS </span><br><span class="text2">TO YOUR <br>
-         FUNDS ANYTIME</span></p></div>
-      </div>
-  
-      <div class="swiper-slide">
-        <video muted loop autoplay>
-          <source src="https://videos.pexels.com/video-files/7829075/7829075-sd_640_360_25fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/13107027/13107027-sd_640_360_30fps.mp4" type="video/webm" />
-        </video>
-        <div class="slide-caption"><p><span class="text1">JOIN OUR  </span><br><span class="text2">COMMUNITY AND<br>
-          START SAVING TODAY</span></p></div>
-      </div>
+    <!-- Hero -->
+    <div class="swiper-container slider-1">
+        <div class="swiper-wrapper">
+        
+            <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
+                <img src="https://images.pexels.com/photos/3790639/pexels-photo-3790639.jpeg?auto=compress&cs=tinysrgb&w=600" class="h-[100%] w-[100%] object-cover" alt="" />
+                <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
+                <div class="h-[100dvh] w-[100%] absolute flex flex-row items-center justify-center text-center">
+                    <p class="text1 text-6xl font-black text-[#FFFFFF]">
+                        Instant access to your funds anytime
+                    </p>
+                </div>
+            </div>
+            
+            <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
+                <img src="https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&w=600" class="h-[100%] w-[100%] object-cover" alt="" />
+                <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
+                <div class="h-[100dvh] w-[100%] absolute flex flex-row items-center justify-center text-center">
+                    <p class="text1 text-6xl font-black text-[#FFFFFF]">
+                      Build a better financial future with us
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-  </div>
   
 
   <!-- <div class="content">
@@ -155,101 +160,107 @@
     
   </div> -->
 
-  <div class="arrows d-flex">
-    <div class="swiper-prev d-flex">
-      <i class="bx bx-chevron-left swiper-icon"></i>
+    <div class="arrows p-1.5">
+        <div class="swiper-prev">
+        <i class="bx bx-chevron-left swiper-icon"></i>
+        </div>
+        <div class="swiper-next">
+        <i class="bx bx-chevron-right swiper-icon"></i>
+        </div>
     </div>
-    <div class="swiper-next d-flex">
-      <i class="bx bx-chevron-right swiper-icon"></i>
-    </div>
-  </div>
 
 
-  <!-- Add this to your HTML file where appropriate -->
-<div class="container">
-    <h1>ROSCA Groups</h1>
-
-    <section class="form-section">
-        <h2>Create a New Group</h2>
-        <form id="create-group-form">
-            <label for="group-name">Group Name:</label>
-            <input type="text" id="group-name" placeholder="Enter group name" required>
-            <button type="submit" class="join">Create Group</button>
-        </form>
+    <!-- Add this to your HTML file where appropriate -->
+    <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5">
+        
+        <h1 class="font-bold text-2xl">ROSCA Groups</h1>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
+            <div class="form-section w-full">
+                <h2>Create a New Group</h2>
+                <form id="create-group-form">
+                    <label for="group-name">Group Name:</label>
+                    <input type="text" class="py-2 px-3 outline-0" id="group-name" placeholder="Enter group name" required>
+                    <button type="submit" class="join">Create Group</button>
+                </form>
+            </div>
+        
+            <div class="form-section w-full">
+                <h2>Join an Existing Group</h2>
+                <form id="join-group-form">
+                    <label for="join-group-id">Group ID:</label>
+                    <input type="text" class="py-2 px-3 outline-0" id="join-group-id" placeholder="Enter group ID" required>
+                    <button type="submit" class="join">Join Group</button>
+                </form>
+            </div>
+        </div>
     </section>
-
-    <section class="form-section">
-        <h2>Join an Existing Group</h2>
-        <form id="join-group-form">
-            <label for="join-group-id">Group ID:</label>
-            <input type="text" id="join-group-id" placeholder="Enter group ID" required>
-            <button type="submit" class="join">Join Group</button>
-        </form>
-    </section>
-</div>
 
     <!-- Services / Goal Section  -->
 
-    <section id="services" class="bg-light py-3">
-        <h3 class="text-center text1" style="margin: 10px;">Our Services</h3>
-        <h2 class="text-center">Discover Our Latest <span class="text-secondary">Case Studies</span></h2>
-        <p class="text-center"style="margin: 10px;">
+    <section id="services" class="bg-light py-3 md:px-[100px] lg:px-[150px] py-[50px] px-5">
+
+        <h3 class="mt-2 font-bold text-2xl">Our Services</h3>
+
+        <h2 class="mt-2">Discover Our Latest <span class="text-secondary">Case Studies</span></h2>
+
+        <p class="my-2">
             We provide insights to help you see things differently, discover new opportunities, and achieve goals that link today with tomorrow.
         </p>
     
         <div class="wrapper">
-            <div class="items">
-                <div class="item">
+            <div class="items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="item w-full">
                     <i class="bx bxs-badge-dollar bx-lg"></i>
                     <h3>Financial Services</h3>
                     <p>Expert solutions to manage your finances and investments effectively.</p>
                 </div>
-                <div class="item">
+                <div class="item w-full">
                     <i class="bx bxs-building-house bx-lg"></i>
                     <h3>Government Services</h3>
                     <p>Comprehensive support for public sector initiatives and projects.</p>
                 </div>
-                <div class="item">
+                <div class="item w-full">
                     <i class="bx bxs-credit-card-front bx-lg"></i>
                     <h3>Customer Products</h3>
                     <p>Innovative products designed to enhance customer experience and satisfaction.</p>
                 </div>
-                <div class="item">
+                <div class="item w-full">
                     <i class="bx bxs-plane-alt bx-lg"></i>
                     <h3>Airlines & Transport</h3>
                     <p>Efficient solutions for travel and transportation management.</p>
                 </div>
             </div>
-            <div id="goal" class="goal">
-                <div class="goal-img">
+
+            <div id="goal" class="goal flex flex-col md:flex-row mt-[50px] gap-5">
+                <div class="w-[100%]">
                     <img src="images/photo1.jpg" alt="Investment Banking">
                 </div>
-                <div class="goal-text">
+                <div class="goal-text w-[100%]">
                     <a href="#">Explore Our Priorities</a>
-                    <h2>Investment Banking & <br> Capital Markets</h2>
-                    <div class="contents">
-                        <div class="content p-4">
+                    <h2>Investment Banking & Capital Markets</h2>
+                    <div class="flex flex-row gap-2 contents">
+                        <div class="">
                             <i class="bx bx-check bx-sm"></i>
                         </div>
-                        <div class="content p-4">
+                        <div class="">
                             <h3>Investment Management</h3>
                             <p>Strategic management to grow your investments and maximize returns.</p>
                         </div>
                     </div>
-                    <div class="contents">
-                        <div class="content p-4">
+                    <div class="flex flex-row gap-2 contents">
+                        <div class="">
                             <i class="bx bx-check bx-sm"></i>
                         </div>
-                        <div class="content p-4">
+                        <div class="">
                             <h3>Private Credit & Equity</h3>
                             <p>Tailored solutions for private credit and equity investments.</p>
                         </div>
                     </div>
-                    <div class="contents">
-                        <div class="content p-4">
+                    <div class="flex flex-row gap-2 contents">
+                        <div class="">
                             <i class="bx bx-check bx-sm"></i>
                         </div>
-                        <div class="content p-4">
+                        <div class="">
                             <h3>Business Multi Solutions</h3>
                             <p>Comprehensive solutions to address various business needs and challenges.</p>
                         </div>
@@ -260,12 +271,11 @@
         </div>
     </section>
     
-
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio py-3">
-        <h3 class="text-center">Company Portfolio</h3>
-        <h2 class="text-center">Our Latest <span class="text-secondary">Case Studies</span> </h2>
-        <p class="text-center">We help you see the world differently, discover opportunities you may never have <br> imagined and achieve results that bridge what is with what can be</p>
+    <section id="portfolio" class="portfolio py-[50px] md:px-[100px] lg:px-[150px] px-5">
+        <h3 class="">Company Portfolio</h3>
+        <h2 class="">Our Latest <span class="text-secondary">Case Studies</span> </h2>
+        <p class="">We help you see the world differently, discover opportunities you may never have <br> imagined and achieve results that bridge what is with what can be</p>
         <div class="owl-carousel">
             <div class="item"><img src="./images/photo2.jpg" alt=""></div>
             <div class="item"><img src="./images/photo3.jpg" alt=""></div>
@@ -283,12 +293,12 @@
     </section>
 
     <!-- Team Section -->
-    <section id="teams" class="teams bg-light py-3">
+    <section id="teams" class="teams bg-light px-5 md:px-[100px] lg:px-[150px] py-[50px]">
         <h3 class="text-center">We are there for you</h3>
         <h2 class="text-center">Meet Our <span class="text-secondary">Professional Team</span></h2>
         <p class="text-center">We help you see the world differently, discover opportunities you may never have <br> imagined and achieve results that bridge what is with what can be</p>
         <div class="wrapper">
-            <div class="card-items">
+            <div class="card-items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div class="card">
                     <div class="card-header">
                         <img src="images/cynthia.jpg" alt="">
@@ -354,17 +364,17 @@
     </section>
     
     <!-- Blog Section -->
-    <section id="blog" class="blog py-3">
+    <section id="blog" class="blog py-3 md:px-[100px] lg:px-[150px] py-[50px]">
         <div class="wrapper">
-            <div class="header">
+            <div class="header px-5">
                 <span></span>
                 <h4>Business Blog</h4>
             </div>
-            <div class="blog-info">
+            <div class="blog-info flex flex-col md:flex-row md:items-center justify-between px-5">
                 <h2>Read Our <span class="text-secondary">Latest Insights</span></h2>
-                <a href="#">view all</a>
+                <a href="#" class="w-fit">view all</a>
             </div>
-            <div class="blog-card">
+            <div class="blog-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
                 <div class="card">
                     <div class="card-header">
                         <img src="images/blog1.jpg" alt="">
@@ -413,9 +423,9 @@
         <h2 class="text-center">Subscribe To Our Newsletter</h2>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,<br> quam asperiores qui illum tenetur atque.</p>
         <div class="wrapper">
-            <form class="text-center">
-                <input type="email" name="email" id="email" placeholder="Enter Email Address">
-                <button class="button">Submit</button>
+            <form class="text-center md:w-[40%] mx-auto px-5">
+                <input type="email" class="py-2 px-3" name="email" id="email" placeholder="Enter Email Address">
+                <button class="button py-3 px-3">Submit</button>
             </form>
         </div>
     </section>
