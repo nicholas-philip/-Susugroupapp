@@ -1,3 +1,27 @@
+// Get elements
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const menuRight = document.getElementById('menu-right');
+
+
+if (hamburgerMenu && menuRight) {
+    // Add click event listener to hamburger menu
+    hamburgerMenu.addEventListener('click', function() {
+        // Toggle the 'active' class on the menu
+        menuRight.classList.toggle('active');
+        
+        
+        if (menuRight.classList.contains('active')) {
+            menuRight.style.backgroundColor = '#cfcfcf';
+        } else {
+            menuRight.style.backgroundColor = '#cfcfcf';
+        }
+    });
+} else {
+    console.error('Element not found: Check if "hamburger-menu" and "menu-right" exist in the DOM.');
+}
+
+
+
 // SearchForm Section code
 let searchForm = document.querySelector('.search-form');
 document.querySelector('#search-btn').onclick = () =>{
@@ -69,6 +93,37 @@ const swiper1 = new Swiper(".slider-1", {
     },
   });
   
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const swiper2 = new Swiper(".slider-2", {
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+      },
+      breakpoints: {
+        640: { // mobile
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: { // tablets
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1024: { // desktops
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+      },
+    });
+  });
+
+
+
   document.addEventListener('DOMContentLoaded', function() {
     // Get references to the buttons
     const loginBtn = document.getElementById('login-btn');
@@ -160,3 +215,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+
+
+
+
+
+   

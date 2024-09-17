@@ -45,6 +45,10 @@ html{
     height: 100vh;
 } */
 
+
+
+
+
 /* Top Navbar */
 
 .showcase .left li{
@@ -81,7 +85,7 @@ html{
 
 /* Sticky Navbar */
 .navbar-bottom.sticky {
-    background: #fff;
+    background:#cfcfcf;
     border-bottom: 1px solid #0A2940;
     color: #0A2940;
     top: 0;
@@ -93,6 +97,8 @@ html{
     font-size: 20px;
     font-weight: 700;
     transition: all 0.5s ease;
+    flex-direction: row;
+    display: flex;
 }
 
 .showcase .navbar-bottom.sticky .brand-left {
@@ -140,6 +146,7 @@ html{
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+
 /* Search Form Styling */
 .navbar-bottom .search-form {
     position: absolute;
@@ -167,6 +174,44 @@ html{
 .navbar-bottom .search-form label:hover {
     color: #55BA53;
 }
+/* Mobile menu styles */
+/* Hide the full menu and auth buttons by default on smaller screens */
+#menu-right,
+.auth-buttons {
+    display: none;
+}
+
+
+
+
+/* Show the menu and auth buttons on medium and larger screens */
+@media (min-width: 768px) {
+    #menu-right,
+    .auth-buttons {
+        display: flex;
+    }
+
+    .search-form {
+        display: none !important;
+    }
+    
+}
+
+/* Style for showing the menu on mobile when open */
+#menu-right.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 20; /* Ensures it appears over other elements */
+}
+  
+  
+
 
 /* Responsive Styles */
 
@@ -420,6 +465,12 @@ input {
     /* margin-right: 5px; */
 }
 
+
+
+
+
+
+
 /* Portfolio Section Styling  */
 #portfolio{
     background: #0A2940;
@@ -471,6 +522,31 @@ input {
 .owl-dot:hover{
     background: #55BA53 !important;
 }
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .owl-carousel .item img {
+        width: 200px; /* Fixed width for larger screens */
+        height: 300px; /* Fixed height */
+        border: 2px solid #95A2BB;
+       
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 767px) {
+    .owl-carousel .item img {
+        width: 200px; /* Make the image responsive to fit the screen */
+        height: 300px; /* Maintain aspect ratio */
+        max-width: 700px; /* Limit maximum width to 700px */
+        border: 2px solid #95A2BB;
+       
+    }
+}
+
+
+
+
 
 /* Teams Section Styling */
 #teams h3{
