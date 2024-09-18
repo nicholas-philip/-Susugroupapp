@@ -15,7 +15,7 @@
             theme: {
                 extend: {
                 colors: {
-                    clifford: '#da373d',
+                    backgroundColor: '#F0F0F0',
                 }
                 }
             }
@@ -90,12 +90,17 @@
                     </div>
 
                 </div>
+
+                <div class="auth-buttons flex flex-row items-center gap-2 md:hidden">
+                    <a href="login.html" id="login-btn" class="btn py-2 px-3">Login</a>
+                    <a href="signup.html" id="signup-btn" class="btn py-2 px-3">Signup</a>
+                </div>
             </ul>
 
             <!-- Search Form -->
             <div class="auth-buttons flex flex-row items-center gap-2 hidden md:flex">
-                <button id="login-btn" class="btn py-2 px-3">Login</button>
-                <button id="signup-btn" class="btn py-2 px-3">Signup</button>
+                <a href="login.html" id="login-btn" class="btn py-2 px-3">Login</a>
+                <a href="signup.html" id="signup-btn" class="btn py-2 px-3">Signup</a>
             </div>
 
             <!-- Hamburger Menu Icon -->
@@ -181,8 +186,8 @@
         <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
             <div class="form-section w-full">
                 <h2>Create a New Group</h2>
-                <form id="create-group-form">
-                    <label for="group-name">Group Name:</label>
+                <form id="create-group-form" class="form">
+                    <label for="group-name" class="label">Group Name:</label>
                     <input type="text" class="py-2 px-3 outline-0" id="group-name" placeholder="Enter group name" required>
                     <button type="submit" class="join">Create Group</button>
                 </form>
@@ -190,8 +195,8 @@
         
             <div class="form-section w-full">
                 <h2>Join an Existing Group</h2>
-                <form id="join-group-form">
-                    <label for="join-group-id">Group ID:</label>
+                <form id="join-group-form" class="form">
+                    <label for="join-group-id" class="label">Group ID:</label>
                     <input type="text" class="py-2 px-3 outline-0" id="join-group-id" placeholder="Enter group ID" required>
                     <button type="submit" class="join">Join Group</button>
                 </form>
