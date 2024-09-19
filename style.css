@@ -20,7 +20,8 @@ html{
     text-align: center;
 }
 .bg-light{
-    background: #cfcfcf;
+    /* background: #F0F0F0; */
+    background-color: #F0F0F0;
 }
 .bg-secondary{
     background: #55BA53;
@@ -79,13 +80,13 @@ html{
 /* Bottom Navbar */
 /* General Navbar Styling */
 .showcase .navbar-bottom {
-    background: #cfcfcf;
+    background: #F0F0F0;
     z-index: 999;
 }
 
 /* Sticky Navbar */
 .navbar-bottom.sticky {
-    background:#cfcfcf;
+    background:#F0F0F0;
     border-bottom: 1px solid #0A2940;
     color: #0A2940;
     top: 0;
@@ -349,13 +350,13 @@ h2 {
     color: #0056b3;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-label {
+.label {
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -748,7 +749,7 @@ input {
     flex-wrap: wrap;
 } */
 #blog .wrapper .card{
-    background-color: #cfcfcf;
+    background-color: #F0F0F0;
     border-radius: 5px;
     box-shadow: 0 2px 20px rgba(0,0,0,0.2);
     overflow: hidden;
