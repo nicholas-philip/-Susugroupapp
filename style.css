@@ -206,7 +206,7 @@ html{
     top: 60px; /* Adjust as needed */
     left: 0;
     right: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 10px;
     z-index: 20; /* Ensures it appears over other elements */
 }
@@ -688,6 +688,8 @@ input {
     }
     .testimonial-col:hover{
         transform: translateY(-7px);
+        background-color: #0A2940;
+        color: white;
     }
     @media screen and (max-width:770px){
         .testimonial-col{
@@ -958,8 +960,9 @@ input {
 
 #footer{
     padding:100px 0 20px ;
-    background: #efefef;
+    background: #0a2940;
     position: relative;
+    color: white;
 }
 .footer-row{
     width:80%;
@@ -1033,5 +1036,34 @@ input {
      }
     .footer-img{
         top: 25%;
+    }
+    .footer-row{
+        width:80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between ;
+         flex-wrap: wrap;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+    }
+
+    .footer-left , .footer-right{
+        flex-basis:45% ;
+        padding: 10px;
+        margin-bottom: 20px;
+     }
+     .footer-right{
+        text-align: left;
+     }
+
+     .title-text{
+        display: flex;
+        align-items:center;
+        justify-content: center ;
+        margin: 30px;
+        flex-direction: column;
+        top: -50px;
     }
 }
