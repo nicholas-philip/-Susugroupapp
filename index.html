@@ -121,13 +121,13 @@
     </div> -->
 
     <!-- Hero -->
-    <div class="swiper-container slider-1">
+    <div class="swiper-container slider-1 flex flex-col items-center justify-between">
         <div class="swiper-wrapper">
         
             <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
                 <img src="https://images.pexels.com/photos/3790639/pexels-photo-3790639.jpeg?auto=compress&cs=tinysrgb&w=600" class="h-[100%] w-[100%] object-cover" alt="" />
                 <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
-                <div class="h-[100dvh] w-[100%] absolute flex flex-row items-center justify-center text-center">
+                <div class="h-[100dvh] w-[100%] md:w-[60%] absolute flex flex-row items-center justify-center text-center">
                     <p class="text1 text-6xl font-black text-[#FFFFFF]">
                         Instant access to your funds anytime
                     </p>
@@ -137,13 +137,22 @@
             <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
                 <img src="https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&w=600" class="h-[100%] w-[100%] object-cover" alt="" />
                 <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
-                <div class="h-[100dvh] w-[100%] absolute flex flex-row items-center justify-center text-center">
+                <div class="h-[100dvh] w-[100%] md:w-[60%] absolute flex flex-row items-center justify-center text-center">
                     <p class="text1 text-6xl font-black text-[#FFFFFF]">
                       Build a better financial future with us
                     </p>
                 </div>
             </div>
 
+        </div>
+        
+        <div class="flex flex-row items-center justify-between h-[100%] w-[100%] absolute arrows">
+            <div class="swiper-prev">
+            <i class="bx bx-chevron-left swiper-icon"></i>
+            </div>
+            <div class="swiper-next">
+            <i class="bx bx-chevron-right swiper-icon"></i>
+            </div>
         </div>
 
     </div>
@@ -169,18 +178,8 @@
     
   </div> -->
 
-    <div class="arrows p-1.5">
-        <div class="swiper-prev">
-        <i class="bx bx-chevron-left swiper-icon"></i>
-        </div>
-        <div class="swiper-next">
-        <i class="bx bx-chevron-right swiper-icon"></i>
-        </div>
-    </div>
-
-
     <!-- Add this to your HTML file where appropriate -->
-    <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5">
+    <!-- <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5">
         
         <h1 class="font-bold text-2xl">ROSCA Groups</h1>
         <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
@@ -202,17 +201,15 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Services / Goal Section  -->
 
     <section id="services" class="bg-light py-3 md:px-[100px] lg:px-[150px] py-[50px] px-5">
 
-        <h3 class="mt-2 font-bold text-2xl">Our Services</h3>
+        <h3 class="mt-2 font-bold text-3xl">Our Services</h3>
 
-        <h2 class="mt-2">Discover Our Latest <span class="text-secondary">Case Studies</span></h2>
-
-        <p class="my-2">
+        <p class="my-3">
             We provide insights to help you see things differently, discover new opportunities, and achieve goals that link today with tomorrow.
         </p>
     
@@ -258,31 +255,31 @@
                 <div class="goal-text w-[100%]">
                     <a href="#">Explore Our Priorities</a>
                     <h2>Investment Banking & Capital Markets</h2>
-                    <div class="flex flex-row gap-2 contents">
+                    <div class="flex flex-row gap-2">
                         <div class="">
-                            <i class="bx bx-check bx-sm"></i>
+                            <i class="bx bx-check bx-sm bg-[#0A2940] text-[#55BA53] rounded-md p-1"></i>
                         </div>
                         <div class="">
-                            <h3>Investment Management</h3>
-                            <p>Strategic management to grow your investments and maximize returns.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row gap-2 contents">
-                        <div class="">
-                            <i class="bx bx-check bx-sm"></i>
-                        </div>
-                        <div class="">
-                            <h3>Private Credit & Equity</h3>
-                            <p>Tailored solutions for private credit and equity investments.</p>
+                            <h3 class="text-[#55BA53]">Investment Management</h3>
+                            <p class="text-[#1A1B1E]">Strategic management to grow your investments and maximize returns.</p>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-2 contents">
+                    <div class="flex flex-row gap-2 my-2">
                         <div class="">
-                            <i class="bx bx-check bx-sm"></i>
+                            <i class="bx bx-check bx-sm bg-[#0A2940] text-[#55BA53] rounded-md p-1"></i>
                         </div>
                         <div class="">
-                            <h3>Business Multi Solutions</h3>
-                            <p>Comprehensive solutions to address various business needs and challenges.</p>
+                            <h3 class="text-[#55BA53]">Private Credit & Equity</h3>
+                            <p class="text-[#1A1B1E]">Tailored solutions for private credit and equity investments.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <div class="">
+                            <i class="bx bx-check bx-sm bg-[#0A2940] text-[#55BA53] rounded-md p-1"></i>
+                        </div>
+                        <div class="">
+                            <h3 class="text-[#55BA53]">Business Multi Solutions</h3>
+                            <p class="text-[#1A1B1E]">Comprehensive solutions to address various business needs and challenges.</p>
                         </div>
                     </div>
                 </div>
@@ -295,8 +292,8 @@
     <section id="portfolio" class="portfolio py-[50px] md:px-[100px] lg:px-[150px] px-5">
         <h3 class="">Company Portfolio</h3>
         <h2 class="">Our Latest <span class="text-secondary">Case Studies</span> </h2>
-        <p class="">We help you see the world differently, discover opportunities you may never have <br> imagined and achieve results that bridge what is with what can be</p>
-        <div class="owl-carousel">
+        <p class="">We help you see the world differently, discover opportunities you may never have imagined and achieve results that bridge what is with what can be</p>
+        <div class="owl-carousel mt-5">
             <div class="item"><img src="./images/photo2.jpg" alt=""></div>
             <div class="item"><img src="./images/photo3.jpg" alt=""></div>
             <div class="item"><img src="./images/photo4.jpg" alt=""></div>
@@ -314,9 +311,9 @@
 
     <!-- Team Section -->
     <section id="teams" class="teams bg-light px-5 md:px-[100px] lg:px-[150px] py-[50px]">
-        <h3 class="text-center">We are there for you</h3>
-        <h2 class="text-center">Meet Our <span class="text-secondary">Professional Team</span></h2>
-        <p class="text-center">We help you see the world differently, discover opportunities you may never have <br> imagined and achieve results that bridge what is with what can be</p>
+        <!-- <h3 class="">We are there for you</h3> -->
+        <h2 class="">Meet Our <span class="text-secondary">Professional Team</span></h2>
+        <p class="">We help you see the world differently, discover opportunities you may never have <br class="hidden md:flex"> imagined and achieve results that bridge what is with what can be</p>
         <div class="wrapper">
             <div class="card-items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div class="card">
