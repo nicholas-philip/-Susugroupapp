@@ -33,16 +33,17 @@
         <div class="flex flex-row items-center justify-evenly bg-[#000000] p-1 top-0 left-0 right-0 hidden lg:flex">
             <ul class="left flex flex-row items-center gap-5">
                 <li class="flex flex-row items-center gap-2">
-                    Ghana
+                    <i class="bx bxs-map bx-xs"></i>
+                    <span>Ghana</span>
                 </li>
                 <li class="flex flex-row items-center gap-2">
                   <i class="bx bxs-time bx-xs"></i>
                   <span>Mon - sat: 8:00 - 10:00</span>
                 </li>
-                <li class="flex flex-row items-center gap-2">
+                <!-- <li class="flex flex-row items-center gap-2">
                     <i class="bx bxs-map bx-xs"></i>
                     <span>Accra St.East legon</span>
-                </li>
+                </li> -->
                 <li class="flex flex-row items-center gap-2">
                     <i class="bx bxs-phone bx-xs"></i>
                     <span>+1-700-000-000-00</span>
@@ -58,7 +59,7 @@
         <!-- Navbar Bottom Section -->
         <div class="navbar-bottom flex flex-row items-center justify-between fixed left-0 right-0 p-5">
             
-            <a href="#home" class="brand-left"><img src="images/Co. (3).png" alt="" class="h-8 w-8">Susuvault</a>
+            <a href="#home" class="brand-left"><img src="images/Co. (3).png" alt="" class="h-7 w-8 ">Susuvault</a>
             
             <!-- Full Menu -->
             <ul class="menu-right flex flex-row items-center gap-3 hidden md:flex" id="menu-right">
@@ -202,6 +203,17 @@
             </div>
         </div>
     </section> -->
+    <div class="arrows p-1.5">
+        <div class="swiper-prev">
+        <i class="bx bx-chevron-left swiper-icon"></i>
+        </div>
+        <div class="swiper-next">
+        <i class="bx bx-chevron-right swiper-icon"></i>
+        </div>
+    </div>
+
+
+  
 
     <!-- Services / Goal Section  -->
 
@@ -435,39 +447,100 @@
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section id="contact" class="contact bg-secondary py-3">
-        <h2 class="text-center">Subscribe To Our Newsletter</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,<br> quam asperiores qui illum tenetur atque.</p>
-        <div class="wrapper">
-            <form class="text-center md:w-[40%] mx-auto px-5">
-                <input type="email" class="py-2 px-3" name="email" id="email" placeholder="Enter Email Address">
-                <button class="button py-3 px-3">Submit</button>
-            </form>
+
+
+    <section id="testimonials">
+        <div class="title-text">
+            <p class="blog-info flex flex-col md:flex-row md:items-center justify-between px-5 text-4xl font-bold">TESTIMONIAL</p>
+            <h1 class="text-secondary text-xl">What Client Says</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600"alt="">
+                    <div class="user-info">
+                        <h4>PHILIP <i class="fa fa-twitter"></i></h4>
+                        <small>@Philipnicholas</small>
+                    </div>
+                </div>
+                <p>I've tried a few savings apps, but this one stands out. The simplicity and ease of use make saving money feel achievable!.</p>
+               </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <div class="user-info">
+                        <h4>Peace<i class="fa fa-twitter"></i></h4>
+                        <small>@Peace</small>
+                    </div>
+                </div>
+                <p>This savings app helped me achieve my financial goals faster than I expected. It's an essential tool for anyone serious about saving.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="https://images.pexels.com/photos/1197132/pexels-photo-1197132.jpeg?auto=compress&cs=tinysrgb&w=600"alt="">
+                    <div class="user-info">
+                        <h4>Audrey <i class="fa fa-twitter"></i></h4>
+                        <small>@Auderylondon</small>
+                    </div>
+                </div>
+                <p>Thanks to this app, I've managed to build a savings habit that actually sticks. Highly recommended for anyone looking to improve their financial future
+            </p>
+        </div>
         </div>
     </section>
+
+
+
+    <!-- Newsletter Section -->
+ 
+
+  <!-- Add this to your HTML file where appropriate -->
+  <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5">
+        
+    <h1 class="font-bold text-2xl">ROSCA Groups</h1>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
+        <div class="form-section w-full">
+            <h2>Create a New Group</h2>
+            <form id="create-group-form" class="form">
+                <label for="group-name" class="label">Group Name:</label>
+                <input type="text" class="py-2 px-3 outline-0" id="group-name" placeholder="Enter group name" required>
+                <button type="submit" class="join">Create Group</button>
+            </form>
+        </div>
+    
+        <div class="form-section w-full">
+            <h2>Join an Existing Group</h2>
+            <form id="join-group-form" class="form">
+                <label for="join-group-id" class="label">Group ID:</label>
+                <input type="text" class="py-2 px-3 outline-0" id="join-group-id" placeholder="Enter group ID" required>
+                <button type="submit" class="join">Join Group</button>
+            </form>
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer Section -->
     <!-- <footer class="footer-bottom py-3 text-center">
         <p>Copyright &copy; 2022 by DesignMediaX. All Rights Reserved.</p>
     </footer> -->
 
-    <section id="footer">
+    <section id="footer" class="contact bg-[#0a2940] py-3">
         <div class="title-text">
-            <p >CONTACT</p>
-            <h1>Visit Our Office Today</h1>
+            <p class="text-4xl font-bold">CONTACT</p>
+            <h1 class="text-xl">Visit Our Office Today</h1>
         </div>
         <div class="footer-row">
             <div class="footer-Left">
                 <h1>Opening Hours</h1>
-                <p><i class="fa fa-clock-o"></i>Monday to Friday-9am to 9pm</p>
-                <p><i class="fa fa-clock-o"></i>Saturday amd Sunday-8am to 11pm</p>
+                <p><i class="bx bxs-time bx-xs"></i>Monday to Friday-8am to 10pm</p>
+                <p><i class="bx bxs-time bx-xs"></i>Saturday and Sunday-10am to 11pm</p>
             </div>
                 <div class="footer-right">
-                    <h1>Get In Touch</h1>
-                    <p>lapaz Chantan<i class="bx bxs-time bx-xs"></i></p>
-                    <p>example@website.com<i class="fa fa-paper-plane"></i></p>
-                    <p>0277821073<i class="fa fa-phone"></i></p>
+                    <p>Accra St.East legon<i class="bx bxs-map bx-xs"></i></p>
+                    <p>Susuvault.com<i class="bx bxl-google bx-xs"></i></p>
+                    <p>+1-700-000-000-00<i class="bx bxs-phone bx-xs"></i></p>
+                    <p>Copyright &copy; 2022 by DesignMediaX. All Rights Reserved.</p>
                 </div>
         </div>
         

@@ -206,7 +206,7 @@ html{
     top: 60px; /* Adjust as needed */
     left: 0;
     right: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 10px;
     z-index: 20; /* Ensures it appears over other elements */
 }
@@ -639,6 +639,64 @@ input {
     color: #0A2940;
 }
 
+
+
+/*---testimonial----*/
+#testimonial{
+    width:100%;
+    padding:70px 0;
+    }
+    .testimonial-row{
+        width:80%;
+        margin: auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .testimonial-col{
+        flex-basis:28%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 3px #00968814;
+        cursor: pointer;
+        transition: transform.5s;
+    }
+    .testimonial-col p{
+        font-size: 14px;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+       
+    }
+    .user img{
+        width:40px;
+        margin-right: 20px;
+        border-radius: 3px;
+    }
+    .user-info .fa{
+        margin-left: 10px;
+        color: #27c027;
+        font-size: 20px;
+    }
+    .user-info small{
+        color: #009688;
+    }
+    .testimonial-col:hover{
+        transform: translateY(-7px);
+        background-color: #0A2940;
+        color: white;
+    }
+    @media screen and (max-width:770px){
+        .testimonial-col{
+            flex-basis: 100%;
+    
+        }
+    }
+
 /* Blog Section Styling  */
 #blog{
     background: #0A2940;
@@ -901,8 +959,9 @@ input {
 
 #footer{
     padding:100px 0 20px ;
-    background: #efefef;
+    background: #0a2940;
     position: relative;
+    color: white;
 }
 .footer-row{
     width:80%;
@@ -976,5 +1035,34 @@ input {
      }
     .footer-img{
         top: 25%;
+    }
+    .footer-row{
+        width:80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between ;
+         flex-wrap: wrap;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+    }
+
+    .footer-left , .footer-right{
+        flex-basis:45% ;
+        padding: 10px;
+        margin-bottom: 20px;
+     }
+     .footer-right{
+        text-align: left;
+     }
+
+     .title-text{
+        display: flex;
+        align-items:center;
+        justify-content: center ;
+        margin: 30px;
+        flex-direction: column;
+        top: -50px;
     }
 }

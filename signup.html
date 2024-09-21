@@ -23,99 +23,111 @@
 </head>
 <body class="bg-backgroundColor">
   <header>
-      
     <div class="auth-buttons flex flex-row items-center gap-1 cursor-pointer fixed top-5 left-5 p-2 rounded-md bg-[#FFFFFF] w-fit" onclick="history.back()">
       <span class="material-symbols-rounded text-[16px]">arrow_back</span>
       <span class="text-[15px]">back</span>
     </div>
-
   </header>
 
   <main>
     <div class="flex flex-row items-center justify-center h-[100dvh] w-[100%]">
-
-      <form action="" method="post" class="bg-[#FFFFFF] w-full md:w-fit mx-2 p-3 py-10 md:px-20 rounded-2xl">
-
+      <form id="signUpForm" action="" method="post" class="bg-[#FFFFFF] w-full md:w-fit mx-2 p-3 py-10 md:px-20 rounded-2xl">
         <div class="mb-5 font-medium">
-
           <h1 class="text-lg">Sign Up!</h1>
-
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-
           <div>
-
             <label for="fullname" class="opacity-95 font-light">Fullname</label>
             <div class="flex flex-row items-center gap-1 bg-[#FFFFFF] border rounded-lg focus-within:border-[#111] ease-in-out duration-300 mb-2">
-              
               <span class="material-symbols-rounded opacity-50 pl-2">person</span>
-              
               <input type="text" id="fullname" class="outline-0 border-0 py-2.5 pl-1 rounded-r-lg w-full placeholder:font-light" placeholder="Fullname">
-            
             </div>
-
           </div>
-  
-          <div>
 
+          <div>
             <label for="email" class="opacity-95 font-light">Email</label>
             <div class="flex flex-row items-center gap-1 bg-[#FFFFFF] border rounded-lg focus-within:border-[#111] ease-in-out duration-300 mb-2">
-              
-              <span class="material-symbols-rounded opacity-50 pl-2">person</span>
-              
+              <span class="material-symbols-rounded opacity-50 pl-2">email</span>
               <input type="text" id="email" class="outline-0 border-0 py-2.5 pl-1 rounded-r-lg w-full placeholder:font-light" placeholder="Email">
-            
             </div>
-
           </div>
 
           <div>
-
             <label for="password" class="opacity-95 font-light">Password</label>
             <div class="flex flex-row items-center gap-1 bg-[#FFFFFF] border rounded-lg focus-within:border-[#111] ease-in-out duration-300 mb-2">
-
-            <span class="material-symbols-rounded opacity-50 pl-2">lock</span>
-
-            <input type="password" id="password" class="outline-0 border-0 py-2.5 pl-1 rounded-r-lg w-[100%] placeholder:font-light" placeholder="Password">
-
-            <span class="material-symbols-rounded opacity-50 hover:opacity-100 pr-2 cursor-pointer">visibility</span>
-
+              <span class="material-symbols-rounded opacity-50 pl-2">lock</span>
+              <input type="password" id="password" class="outline-0 border-0 py-2.5 pl-1 rounded-r-lg w-[100%] placeholder:font-light" placeholder="Password">
+              <span id="togglePassword" class="material-symbols-rounded opacity-50 hover:opacity-100 pr-2 cursor-pointer">visibility</span>
             </div>
-
           </div>
 
           <div>
-
-            <label for="password" class="opacity-95 font-light">Confirm Password</label>
+            <label for="confirmPassword" class="opacity-95 font-light">Confirm Password</label>
             <div class="flex flex-row items-center gap-1 bg-[#FFFFFF] border rounded-lg focus-within:border-[#111] ease-in-out duration-300 mb-2">
-
               <span class="material-symbols-rounded opacity-50 pl-2">lock</span>
-
-              <input type="password" id="password" class="outline-0 border-0 py-2.5 pl-1 rounded-r-lg w-[100%] placeholder:font-light" placeholder="Confirm Password">
-
-              <span class="material-symbols-rounded opacity-50 hover:opacity-100 pr-2 cursor-pointer">visibility</span>
-
+              <input type="password" id="confirmPassword" class="outline-0 border-0 py-2.5 pl-1 rounded-r-lg w-[100%] placeholder:font-light" placeholder="Confirm Password">
+              <span id="toggleConfirmPassword" class="material-symbols-rounded opacity-50 hover:opacity-100 pr-2 cursor-pointer">visibility</span>
             </div>
-
           </div>
-
         </div>
 
         <div class="mt-3">
-          
-          <input type="button" value="Signup" class="w-[100%] py-2.5 rounded-lg bg-[#111] text-backgroundColor cursor-pointer hover:opacity-80 hover:text-backgroundColor ease-in-out duration-300">
-          
+          <input id="signUpButton" type="button" value="Signup" class="w-[100%] py-2.5 rounded-lg bg-[#111] text-backgroundColor cursor-pointer hover:opacity-80 ease-in-out duration-300">
         </div>
 
         <div class="mt-1">
-          <sapn href="" class="text-[13px]">Already a user? Login <a href="login.html" class="underline text-green-500">here!</a></sapn>
+          <span class="text-[13px]">Already a user? Login <a href="login.html" class="underline text-green-500">here!</a></span>
         </div>
-
       </form>
-
     </div>
   </main>
-    
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const signUpForm = document.getElementById('signUpForm');
+      const signUpButton = document.getElementById('signUpButton');
+      const passwordInput = document.getElementById('password');
+      const confirmPasswordInput = document.getElementById('confirmPassword');
+      const togglePassword = document.getElementById('togglePassword');
+      const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+
+      
+      togglePassword.addEventListener('click', function () {
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        this.textContent = type === 'password' ? 'visibility' : 'visibility_off';
+      });
+
+      toggleConfirmPassword.addEventListener('click', function () {
+        const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        confirmPasswordInput.setAttribute('type', type);
+        this.textContent = type === 'password' ? 'visibility' : 'visibility_off';
+      });
+
+      // Handle sign-up button click
+      signUpButton.addEventListener('click', function () {
+        const fullname = signUpForm.querySelector('#fullname').value;
+        const email = signUpForm.querySelector('#email').value;
+        const password = signUpForm.querySelector('#password').value;
+        const confirmPassword = signUpForm.querySelector('#confirmPassword').value;
+
+        if (validateSignUpForm(email, password, confirmPassword)) {
+          // Simulate sign-up
+          localStorage.setItem('signedUp', 'true');
+          alert('Sign up successful!');
+          window.location.href = 'index.html'; // Redirect to login page
+        } else {
+          alert('Please fill out all fields correctly and ensure passwords match.');
+        }
+      });
+
+      function validateSignUpForm(email, password, confirmPassword) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email) && password.trim() !== '' && password === confirmPassword;
+      }
+    });
+  </script>
 </body>
+
 </html>
