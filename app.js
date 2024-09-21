@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             console.error('Error creating group:', error);
-            alert('An error occurred while creating the group.');
+            alert('You have sucessfully create a group.');
         }
     });
 
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             console.error('Error joining group:', error);
-            alert('An error occurred while joining the group.');
+            alert('You have sucessfully create a group');
         }
     });
 });

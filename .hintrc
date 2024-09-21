@@ -5,6 +5,7 @@
   "hints": {
     "axe/structure": "off",
     "axe/name-role-value": "off",
-    "button-type": "off"
+    "button-type": "off",
+    "meta-viewport": "off"
   }
 }

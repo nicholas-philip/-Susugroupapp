@@ -82,7 +82,15 @@
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
-                
+                <div class="flex flex-row items-center gap-2"></div>
+
+                    <i class="bx bx-search bx-sm p-0 m-0 cursor-pointer" id="search-btn"></i>
+                    
+                    <div class="search-form hidden rounded-md" id="search-form">
+                        <input type="search" name="search-box" class="rounded-md py-2 w-[200px] px-5" id="search-box" placeholder="search here...">
+                    </div>
+
+                </div>
                 
 
                 <div class="auth-buttons flex flex-row items-center gap-2 md:hidden">
@@ -236,6 +244,34 @@
 
 
   
+  <!-- Add this to your HTML file where appropriate -->
+  <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5">
+        
+    <h1 class="font-bold text-2xl">Create Groups</h1>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
+        <div class="form-section w-full">
+            <h2>Create a New Group</h2>
+            <form id="create-group-form" class="form">
+                <label for="group-name" class="label">Group Name:</label>
+                <input type="text" class="py-2 px-3 outline-0" id="group-name" placeholder="Enter group name" required>
+                <button type="submit" class="join">Create Group</button>
+            </form>
+        </div>
+    
+        <div class="form-section w-full">
+            <h2>Join an Existing Group</h2>
+            <form id="join-group-form" class="form">
+                <label for="join-group-id" class="label">Group ID:</label>
+                <input type="text" class="py-2 px-3 outline-0" id="join-group-id" placeholder="Enter group ID" required>
+                <button type="submit" class="join">Join Group</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
 
     <!-- Services / Goal Section  -->
 
@@ -325,8 +361,8 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio py-[50px] md:px-[100px] lg:px-[150px] px-5">
         <h3 class="">Company Portfolio</h3>
-        <h2 class="">Our Latest <span class="text-secondary">Case Studies</span> </h2>
-        <p class="">We help you see the world differently, discover opportunities you may never have imagined and achieve results that bridge what is with what can be</p>
+        <h2 class="">Our Latest <span class="text-secondary">Case Studies</span></h2>
+        <p class="">We offer fresh perspectives, uncover new opportunities, and deliver results that turn potential into reality.</p>        
         <div class="owl-carousel mt-5">
             <div class="item"><img src="./images/photo2.jpg" alt=""></div>
             <div class="item"><img src="./images/photo3.jpg" alt=""></div>
@@ -347,7 +383,7 @@
     <section id="teams" class="teams bg-light px-5 md:px-[100px] lg:px-[150px] py-[50px]">
         <!-- <h3 class="">We are there for you</h3> -->
         <h2 class="">Meet Our <span class="text-secondary">Professional Team</span></h2>
-        <p class="">We help you see the world differently, discover opportunities you may never have <br class="hidden md:flex"> imagined and achieve results that bridge what is with what can be</p>
+        <p class="">Led by our visionary CEO and supported by a talented staff, our team brings expertise, innovation, and dedication to every project. Together, we turn ideas into success and drive meaningful impact.</p>             
         <div class="wrapper">
             <div class="card-items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div class="card">
@@ -516,30 +552,7 @@
     <!-- Newsletter Section -->
  
 
-  <!-- Add this to your HTML file where appropriate -->
-  <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5">
-        
-    <h1 class="font-bold text-2xl">ROSCA Groups</h1>
-    <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
-        <div class="form-section w-full">
-            <h2>Create a New Group</h2>
-            <form id="create-group-form" class="form">
-                <label for="group-name" class="label">Group Name:</label>
-                <input type="text" class="py-2 px-3 outline-0" id="group-name" placeholder="Enter group name" required>
-                <button type="submit" class="join">Create Group</button>
-            </form>
-        </div>
-    
-        <div class="form-section w-full">
-            <h2>Join an Existing Group</h2>
-            <form id="join-group-form" class="form">
-                <label for="join-group-id" class="label">Group ID:</label>
-                <input type="text" class="py-2 px-3 outline-0" id="join-group-id" placeholder="Enter group ID" required>
-                <button type="submit" class="join">Join Group</button>
-            </form>
-        </div>
-    </div>
-</section>
+
 
 
     <!-- Footer Section -->
@@ -562,7 +575,7 @@
                     <p>Accra St.East legon<i class="bx bxs-map bx-xs"></i></p>
                     <p>Susuvault.com<i class="bx bxl-google bx-xs"></i></p>
                     <p>+1-700-000-000-00<i class="bx bxs-phone bx-xs"></i></p>
-                    <p>Copyright &copy; 2022 by DesignMediaX. All Rights Reserved.</p>
+                    <p>Copyright &copy; 2024. All Rights Reserved.</p>
                 </div>
         </div>
         
