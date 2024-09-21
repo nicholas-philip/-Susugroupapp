@@ -115,6 +115,7 @@ html{
     font-size: 14px;
     font-weight: 600;
     transition: all 0.5s ease;
+    background:transparent;
 }
 
 .showcase .navbar-bottom .menu-right a {
@@ -149,7 +150,7 @@ html{
 
 
 /* Search Form Styling */
-.navbar-bottom .search-form {
+/* .navbar-bottom .search-form {
     position: absolute;
     background: #f4f4f4;
     display: flex;
@@ -174,7 +175,7 @@ html{
 
 .navbar-bottom .search-form label:hover {
     color: #55BA53;
-}
+} */
 /* Mobile menu styles */
 /* Hide the full menu and auth buttons by default on smaller screens */
 #menu-right,
