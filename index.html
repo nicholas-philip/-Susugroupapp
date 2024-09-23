@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/Co. (3).png" type="image/x-icon" />
-    <title>Financial | DesignMediaX</title>
+    <title>Susuvault</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="boxicons-2.0.9/css/boxicons.min.css">
@@ -59,193 +59,51 @@
 
         <!-- Navbar Bottom Section -->
         <div class="navbar-bottom flex flex-row items-center justify-between fixed left-0 right-0 p-5">
-            
-            <a href="#home" class="brand-left"><img src="images/Co. (3).png" alt="" class="h-7 w-8 ">Susuvault</a>
+            <a href="#home" class="brand-left">
+                <img src="images/Co. (3).png" alt="" class="h-7 w-8">Susuvault
+            </a>
             
             <!-- Full Menu -->
             <ul class="menu-right flex flex-row items-center gap-3 hidden md:flex" id="menu-right">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-                <li>
-                    <a href="#portfolio">About Us</a>
-                </li>
-                <li>
-                    <a href="#teams">Teams</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">About Us</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <div class="flex flex-row items-center gap-2"></div>
-
-                    <i class="bx bx-search bx-sm p-0 m-0 cursor-pointer" id="search-btn"></i>
-                    
-                    <div class="search-form hidden rounded-md" id="search-form">
-                        <input type="search" name="search-box" class="rounded-md py-2 w-[200px] px-5" id="search-box" placeholder="search here...">
-                    </div>
- 
-                    <div class="auth-buttons flex flex-row items-center gap-2 hidden md:flex">
-                        <a href="login.html" id="login-btn" class="btn py-2 px-3">Login</a>
-                        <a href="signup.html" id="signup-btn" class="btn py-2 px-3">Signup</a>
-                    </div>
-
-
-                </div>
                 
-
+                <i class="bx bx-search bx-sm p-0 m-0 cursor-pointer hidden md:hidden sm:hidden bs:hidden" id="search-btn"></i>
+                <div class="search-form hidden rounded-md" id="search-form">
+                    <input type="search" name="search-box" class="rounded-md py-2 w-[200px] px-5" id="search-box" placeholder="search here...">
+                </div>
             </ul>
-
-           
-
-            <!-- Hamburger Menu Icon -->
-            <div class="hamburger-menu md:hidden" id="hamburger-menu">
+        
+            <div class="auth-buttons flex flex-row items-center gap-2 hidden md:flex">
+                <a href="login.html" id="login-btn" class="btn py-2 px-3">Login</a>
+                <!-- <a href="signup.html" id="signup-btn" class="btn py-2 px-3">Signup</a> -->
+            </div>
+        
+            <div class="hamburger md:hidden" id="hamburger-menu">
                 <i class="bx bx-menu bx-sm text-[#111] text-[20px]"></i>
             </div>
-
         </div>
-
-
-       <!-- Showcase content Section -->
-       <!-- <div class="showcase-content">
-           <h1>We Deliver Digital <br> Strategy <span>& Analytics</span></h1>
-           <p>We are boutique firm designed for Private Equity, Family Offices<br> and Growth Stage Companies seeking to maximize results</p>
-           <a href="#" class="btn btn-left">EXPLORE MORE</a>
-           <a href="#" class="btn btn-right">GET IN TOUCH</a>
-       </div>
-    </div> -->
+        
 
     <!-- Hero -->
-    <div class="swiper-container slider-1 flex flex-col items-center justify-between">
-        <div class="swiper-wrapper">
-        
-            <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
-                <img src="https://images.pexels.com/photos/3790639/pexels-photo-3790639.jpeg?auto=compress&cs=tinysrgb&w=600" class="h-[100%] w-[100%] object-cover" alt="" />
-                <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
-                <div class="h-[100dvh] w-[100%] md:w-[60%] absolute flex flex-row items-center justify-center text-center">
-                    <p class="text1 text-6xl font-black text-[#FFFFFF]">
-                        Instant access to your funds anytime
-                    </p>
-                </div>
-            </div>
-            
-            <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
-                <img src="https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&w=600" class="h-[100%] w-[100%] object-cover" alt="" />
-                <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
-                <div class="h-[100dvh] w-[100%] md:w-[60%] absolute flex flex-row items-center justify-center text-center">
-                    <p class="text1 text-6xl font-black text-[#FFFFFF]">
-                      Build a better financial future with us
-                    </p>
-                </div>
-            </div>
-
-            <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
-                <img src="https://images.pexels.com/photos/8276364/pexels-photo-8276364.jpeg?auto=compress&cs=tinysrgb&w=600" class="h-[100%] w-[100%] object-cover" alt="" />
-                <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
-                <div class="h-[100dvh] w-[100%] absolute flex flex-row items-center justify-center text-center">
-                    <p class="text1 text-6xl font-black text-[#FFFFFF]">
-                        Save Smart, Live Better
-                    </p>
-                </div>
-            </div>
-
-            <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
-                <img src="https://www.hubspot.com/hubfs/clientvscustomer_2.webp" class="h-[100%] w-[100%] object-cover" alt="" />
-                <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
-                <div class="h-[100dvh] w-[100%] absolute flex flex-row items-center justify-center text-center">
-                    <p class="text1 text-6xl font-black text-[#FFFFFF]">
-                        Start Saving, Achieve More.
-                    </p>
-                </div>
-            </div>
-
-            <div class="swiper-slide flex flex-col items-center justify-center relative h-[100dvh] w-[100%]">
-                <img src="https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg?auto=compress&cs=tinysrgb&w=600" class="h-[100%] w-[100%] object-cover" alt="" />
-                <div class="absolute h-[100dvh] w-[100%] bg-[#000000]  opacity-50"></div>
-                <div class="h-[100dvh] w-[100%] absolute flex flex-row items-center justify-center text-center">
-                    <p class="text1 text-6xl font-black text-[#FFFFFF]">
-                        Grow Your Wealth with Ease.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="flex flex-row items-center justify-between h-[100%] w-[100%] absolute arrows">
-            <div class="swiper-prev">
-            <i class="bx bx-chevron-left swiper-icon"></i>
-            </div>
-            <div class="swiper-next">
-            <i class="bx bx-chevron-right swiper-icon"></i>
-            </div>
-        </div>
-
-    </div>
-  
-
-  <!-- <div class="content">
-    <h1>
-      Get Ready for A <br />
-      Lifetime Journey
-    </h1>
-    <a href="service.html"  class="btn">Register Now</a>
-    <div class="form1">
-      <form action="https://www.google.com/search" method="get" target="_blank">
-        <input type="text" name="q" placeholder="Search..." class="search-input">
-        <button type="submit" class="search-button" aria-label="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
-            <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
-          </svg>
-        </button>
-      </form>
-    </div>
-    
-    
-  </div> -->
-
-    <!-- Add this to your HTML file where appropriate -->
-    <!-- <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5">
-        
-        <h1 class="font-bold text-2xl">ROSCA Groups</h1>
-        <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
-            <div class="form-section w-full">
-                <h2>Create a New Group</h2>
-                <form id="create-group-form" class="form">
-                    <label for="group-name" class="label">Group Name:</label>
-                    <input type="text" class="py-2 px-3 outline-0" id="group-name" placeholder="Enter group name" required>
-                    <button type="submit" class="join">Create Group</button>
-                </form>
-            </div>
-        
-            <div class="form-section w-full">
-                <h2>Join an Existing Group</h2>
-                <form id="join-group-form" class="form">
-                    <label for="join-group-id" class="label">Group ID:</label>
-                    <input type="text" class="py-2 px-3 outline-0" id="join-group-id" placeholder="Enter group ID" required>
-                    <button type="submit" class="join">Join Group</button>
-                </form>
-            </div>
-        </div>
-    </section> -->
-    <!-- <div class="arrows p-1.5">
-        <div class="swiper-prev">
-        <i class="bx bx-chevron-left swiper-icon"></i>
-        </div>
-        <div class="swiper-next">
-        <i class="bx bx-chevron-right swiper-icon"></i>
-        </div>
-    </div> -->
-
+  <!-- Showcase content Section -->
+  <div class="showcase-content">
+    <h1>Boost Your Savings <br> with <span>& Us</span></h1>
+    <p>Your path to financial freedom starts here.</p>
+    <a href="#services" class="btn btn-left">OUR SERVICES</a>
+    <a href="login.html" id="login-btn" class="btn py-2 px-3 bg-green-500 rounded-xl text-white">Login</a>
+</div>
 
   
   <!-- Add this to your HTML file where appropriate -->
-  <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5">
+  <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5 mt-16 ">
         
-    <h1 class="font-bold text-2xl">Create Groups</h1>
+    <h1 class="font-bold text-2xl md:m-6">Create Groups</h1>
     <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
         <div class="form-section w-full">
             <h2>Create a New Group</h2>

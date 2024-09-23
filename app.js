@@ -2,23 +2,31 @@
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const menuRight = document.getElementById('menu-right');
 
-
+// Check if elements exist
 if (hamburgerMenu && menuRight) {
-    // Add click event listener to hamburger menu
     hamburgerMenu.addEventListener('click', function() {
-        // Toggle the 'active' class on the menu
         menuRight.classList.toggle('active');
         
-        
+        // Change background color when menu is active
         if (menuRight.classList.contains('active')) {
             menuRight.style.backgroundColor = '#cfcfcf';
         } else {
             menuRight.style.backgroundColor = '#cfcfcf';
         }
     });
+
+    // Add click event listeners to each menu item
+    const menuItems = menuRight.querySelectorAll('li a');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            menuRight.classList.remove('active');
+            menuRight.style.backgroundColor = ''; 
+        });
+    });
 } else {
     console.error('Element not found: Check if "hamburger-menu" and "menu-right" exist in the DOM.');
 }
+
 
 
 
@@ -79,6 +87,7 @@ $(document).ready(function(){
         }
     });
 });
+
 
 
 const swiper1 = new Swiper(".slider-1", {
@@ -176,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             console.error('Error creating group:', error);
-            alert('You have sucessfully create a group.');
+            alert('An error occurred while creating the group.');
         }
     });
 
@@ -209,17 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             console.error('Error joining group:', error);
-            alert('You have sucessfully create a group');
+            alert('An error occurred while joining the group.');
         }
     });
 });
-
-
-
-
-
-
-
-
-
-   
