@@ -82,6 +82,7 @@ html{
 .showcase .navbar-bottom {
     background: #F0F0F0;
     z-index: 999;
+    position: fixed;
 }
 
 /* Sticky Navbar */
@@ -445,6 +446,10 @@ input {
 /* Portfolio Section Styling  */
 #portfolio{
     background: #0A2940;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .portfolio h3{
     color: #95A2BB;
