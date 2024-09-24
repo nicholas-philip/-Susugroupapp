@@ -222,3 +222,56 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// Password Toggle Functionality
+const togglePassword = document.getElementById('togglePassword');
+const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmPassword');
+
+togglePassword.addEventListener('click', () => {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+});
+
+toggleConfirmPassword.addEventListener('click', () => {
+    const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    confirmPassword.setAttribute('type', type);
+});
+
+
+const formElements = document.querySelectorAll('input, button');
+
+
+formElements.forEach(element => {
+    element.addEventListener('focus', () => {
+        element.style.transform = 'scale(1.05)'; // Slight scale-up effect
+        element.style.transition = 'transform 0.3s ease';
+    });
+
+    element.addEventListener('blur', () => {
+        element.style.transform = 'scale(1)'; // Revert scale
+    });
+
+   
+    element.addEventListener('mouseover', () => {
+        element.style.transform = 'scale(1.03)'; 
+    });
+
+    element.addEventListener('mouseout', () => {
+        element.style.transform = 'scale(1)'; 
+    });
+});
+
+
+const form = document.getElementById('form'); 
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    
+    alert('Form submitted successfully! You will now be redirected.'); 
+    
+    // Redirect to index.html after alert
+    window.location.href = 'index.html';
+});

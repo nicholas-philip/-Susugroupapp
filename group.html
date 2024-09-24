@@ -1,24 +1,55 @@
-  <!-- Add this to your HTML file where appropriate -->
-  <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5 mt-16  ">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Co. (3).png" type="image/x-icon" />
+    <title>Susuvault</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boxicons-2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    backgroundColor: '#F0F0F0',
+                }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Add this to your HTML file where appropriate -->
+    <section class="md:px-[100px] lg:px-[150px] py-[50px] px-5 mt-16  ">
         
-    <h1 class="font-bold text-2xl md:m-6">Create Groups</h1>
-    <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
-        <div class="form-section w-full">
-            <h2>Create a New Group</h2>
-            <form id="create-group-form" class="form">
-                <label for="group-name" class="label">Group Name:</label>
-                <input type="text" class="py-2 px-3 outline-0" id="group-name" placeholder="Enter group name" required>
-                <button type="submit" class="join">Create Group</button>
-            </form>
-        </div>
-    
-        <div class="form-section w-full">
-            <h2>Join an Existing Group</h2>
-            <form id="join-group-form" class="form">
-                <label for="join-group-id" class="label">Group ID:</label>
-                <input type="text" class="py-2 px-3 outline-0" id="join-group-id" placeholder="Enter group ID" required>
-                <button type="submit" class="join">Join Group</button>
-            </form>
-        </div>
-    </div>
-</section>
+      <h1 class="font-bold text-2xl md:m-6">Create Groups</h1>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
+          <div class="form-section w-full">
+              <h2>Create a New Group</h2>
+              <form id="create-group-form" class="form">
+                  <label for="group-name" class="label">Group Name:</label>
+                  <input type="text" class="py-2 px-3 outline-0" id="group-name" placeholder="Enter group name" required>
+                  <button type="submit" class="join">Create Group</button>
+              </form>
+          </div>
+      
+          <div class="form-section w-full">
+              <h2>Join an Existing Group</h2>
+              <form id="join-group-form" class="form">
+                  <label for="join-group-id" class="label">Group ID:</label>
+                  <input type="text" class="py-2 px-3 outline-0" id="join-group-id" placeholder="Enter group ID" required>
+                  <button type="submit" class="join">Join Group</button>
+              </form>
+          </div>
+      </div>
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

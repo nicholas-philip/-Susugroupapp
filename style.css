@@ -221,20 +221,21 @@ html{
 .showcase{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://advantage.fvcbank.com/wp-content/uploads/2024/08/Plinqit-1.jpeg') no-repeat center center/cover;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     margin-bottom: 10px;
 }
 .showcase .showcase-content{
     max-width: 850px;
     margin-top: 15%;
     padding: 0 95px;
-   padding: 30px;
+   /* padding: 30px; */
 }
 .showcase .showcase-content h1{
     color: #55BA53;
     font-size: 3.1rem;
     margin-top: 15px 0;
-    font-weight: 700;
+    font-weight: 600;
+   
 }
 .showcase .showcase-content span{
     color: #fff;
@@ -244,7 +245,7 @@ html{
 .showcase .showcase-content p{
     color: #ceced4;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: justify;
 }
 .showcase .showcase-content .btn-left{
