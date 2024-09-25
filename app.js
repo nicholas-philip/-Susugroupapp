@@ -275,3 +275,8 @@ form.addEventListener('submit', (event) => {
     // Redirect to index.html after alert
     window.location.href = 'index.html';
 });
+
+
+
+
+

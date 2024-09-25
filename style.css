@@ -471,7 +471,7 @@ input {
     line-height: 1.6;
     margin-bottom: 100px;
 }
-.owl-carousel .item img{
+/* .owl-carousel .item img{
     display: block;
     width: 700px;
     height: 300px;
@@ -497,7 +497,7 @@ input {
 .owl-dot.active,
 .owl-dot:hover{
     background: #55BA53 !important;
-}
+} */
 
 
 
@@ -594,6 +594,89 @@ input {
     color: #0A2940;
 }
 
+
+.FAQ {
+    min-height: 70vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .titles {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+  }
+  
+  .faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .Questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .Questions, h3 {
+    margin-left: -1px;
+    font-size: 1.8rem;
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease-out; 
+  }
+  
+  .answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+  }
+  
+  .faq.active .answer {
+    max-height: 300px; /* Adjust this value based on the content */
+  }
+  
+  .faq.active svg{
+    transform: rotate(180deg);
+  }
+  
+  svg{
+   transition: transform 0.3s ease-in;
+  }
+  
+  @media (max-width: 768px) {
+    .FAQ {
+      width: 90%;
+      padding: 0 1rem;
+    }
+  
+    .titles {
+      font-size: 2.5rem;
+    }
+  
+    .faq {
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .Questions, h3 {
+      font-size: 1.5rem;
+    }
+  
+    .answer p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
 
 
 
