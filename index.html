@@ -41,10 +41,6 @@
                   <i class="bx bxs-time bx-xs"></i>
                   <span>Mon - sat: 8:00 - 10:00</span>
                 </li>
-                <!-- <li class="flex flex-row items-center gap-2">
-                    <i class="bx bxs-map bx-xs"></i>
-                    <span>Accra St.East legon</span>
-                </li> -->
                 <li class="flex flex-row items-center gap-2">
                     <i class="bx bxs-phone bx-xs"></i>
                     <span>+1-700-000-000-00</span>
@@ -58,7 +54,7 @@
         </div>
 
         <!-- Navbar Bottom Section -->
-        <div class="navbar-bottom flex flex-row items-center justify-between fixed left-0 right-0 p-5">
+        <div class="navbar-bottom flex flex-row items-center justify-between fixed top-0 left-0 right-0 p-5">
             <a href="#home" class="brand-left">
                 <img src="images/Co. (3).png" alt="" class="h-7 w-8">Susuvault
             </a>
@@ -73,14 +69,18 @@
                 <li><a href="#contact">Contact</a></li>
                 <div class="flex flex-row items-center gap-2"></div>
                 
-                <i class="bx bx-search bx-sm p-0 m-0 cursor-pointer hidden md:hidden sm:hidden bs:hidden" id="search-btn"></i>
+                <!-- <i class="bx bx-search bx-sm p-0 m-0 cursor-pointer hidden md:hidden sm:hidden bs:hidden" id="search-btn"></i>
                 <div class="search-form hidden rounded-md" id="search-form">
                     <input type="search" name="search-box" class="rounded-md py-2 w-[200px] px-5" id="search-box" placeholder="search here...">
+                </div> -->
+                <div class="auth-buttons flex flex-row items-center gap-2 md:hidden">
+                    <a href="signup.html" id="login-btn" class="btn py-2 px-3">Get Started</a>
+                    <!-- <a href="signup.html" id="signup-btn" class="btn py-2 px-3">Signup</a> -->
                 </div>
             </ul>
         
             <div class="auth-buttons flex flex-row items-center gap-2 hidden md:flex">
-                <a href="login.html" id="login-btn" class="btn py-2 px-3">Login</a>
+                <a href="signup.html" id="login-btn" class="btn py-2 px-3">Get Started</a>
                 <!-- <a href="signup.html" id="signup-btn" class="btn py-2 px-3">Signup</a> -->
             </div>
         
@@ -92,25 +92,34 @@
 
     <!-- Hero -->
   <!-- Showcase content Section -->
-  <div class="showcase-content ">
-    <h1>Save with ease <br> and send money for <span>free</span></h1>
-    <p>Try the all-in-one personal finance app that helps you manage your money and progress towards financial freedom with ease.</p>
+  <div class="showcase-content px-5 md:px-[100px] pt-[150px] md:pt-[200px] pb-[50px]">
+    <h1 class="text-6xl">Save with ease <br> and send money for <span>free</span></h1>
+    <p class="text-[#F2F2F2] text-xl">Try the all-in-one personal finance app that helps you manage your money <br class="hidden lg:flex"> and progress towards financial freedom with ease.</p>
     <!-- <a href="#services" class="btn btn-left">OUR SERVICES</a>
     <a href="login.html" id="login-btn" class="btn py-2 px-3 bg-green-500 rounded-xl text-white">Login</a> -->
-    <div class="flex flex-row gap-8">
-        <a href="#"> <div class="store bg-black flex flex-row justify-around items-center h-25 w-64 gap- rounded-2xl">
-            <a href=""><img src="images/playstore.png" alt="" class="h-8 w-8 flex justify-center items-center"></a>
-             <div class="flex flex-col justify-around ">
-                 <p><span class="text-[10px]">GET IT ON</span><br><span class="text-[20px]">Google Play</span></p>
-             </div>
-         </div></a>
+    <div class="flex flex-col md:flex-row gap-3 mt-3">
+        <a href="#">
+            <div class="store bg-black flex flex-row items-center gap-3 p-3 w-fit rounded-2xl">
+                <img src="images/playstore.png" alt="" class="h-8 w-8 flex justify-center items-center">
+                <div>
+                    <span class="text-[12px] block">GET IT ON</span>
+                    
+                    <span class="text-[20px] block">Google Play</span>
+                </div>
+            </div>
+        </a>
 
-         <a href="#"> <div class="store bg-black flex flex-row justify-around items-center h-25 w-64 gap- rounded-2xl">
-            <a href=""><img src="images/appstore.png" alt="" class="h-8 w-8 flex justify-center items-center"></a>
-             <div class="flex flex-col justify-around ">
-                 <p><span class="text-[10px]">GET IT ON</span><br><span class="text-[20px]">App Play</span></p>
-             </div>
-         </div></a>
+         <a href="#">
+            <div class="store bg-black flex flex-row items-center gap-3 p-3 w-fit rounded-2xl">
+                <img src="images/appstore.png" alt="" class="h-8 w-8 flex justify-center items-center">
+                <div>
+                    <span class="text-[12px] block">GET IT ON</span>
+                    
+                    <span class="text-[20px] block">App Play</span>
+                </div>
+            </div>
+        </a>
+
     </div>
    
 
@@ -128,9 +137,9 @@
 
     <section id="services" class="bg-light py-3 md:px-[100px] lg:px-[150px] py-[50px] px-5">
 
-        <h3 class="mt-2 p-8 text-4xl font-bold flex justify-center items-center">Save and Send money with <br> <span class="m-2"> Susuvault </span></h3>
+        <h3 class="mt-2 text-4xl font-bold fle justify-center items-center">Save and Send money with Susuvault</h3>
 
-        <p class="my-3 flex justify-center items-center md:p-8">
+        <p class="mb-10">
             Do more with your money using  <span class="text-l font-semibold ml-1"> Susuvault </span> , which allows you to make <span class="text-l font-semibold m-1">Smart</span> savings and sending moves.
         </p>
     
@@ -169,7 +178,7 @@
                 
             </div>
 
-            <div id="goal" class="goal flex flex-col md:flex-row mt-[50px] gap-16">
+            <div id="goal" class="goal flex flex-col md:flex-row mt-[100px] gap-16">
                 <!-- Image Section -->
                 <div class="w-[100%]">
                     <img src="images/photo1.jpg" alt="Investment Banking">
@@ -178,7 +187,7 @@
                 <!-- Text Section -->
                 <div class="goal-text w-[100%]">
                     <!-- Group Savings Text -->
-                    <div class="max-w-2xl mx-auto p-8">
+                    <div class="max-w-2xl mx-auto">
                         <h1 class="text-3xl font-bold text-gray-800">Create a Group and Save with Friends and Family</h1>
                         <p class="mt-4 text-gray-600">
                             Join forces with friends and family to achieve your savings goals. With Group Savings, you can easily create a
@@ -206,20 +215,20 @@
     
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio py-[50px] md:px-[100px] lg:px-[150px] px-5 gap-1">
-        <h3 class="">About Us</h3>
+        <h3 class="text-center">About Us</h3>
         <h2 class="">Building Financial Security <span class="text-secondary">Through Savings</span></h2>
         <p class="">We empower individuals and groups to achieve financial stability by offering tailored savings solutions designed for real-life goals.</p>
           
-        <div id="goal" class="goal flex flex-col md:flex-row mt-[50px] gap-16">
+        <div id="goal" class="goal flex flex-col lg:flex-row gap-10 mt-10">
             <!-- Image Section -->
-            <div class="w-[100%] mt-32">
+            <div class="w-[100%]">
                 <img src="https://advantage.fvcbank.com/wp-content/uploads/2024/08/Plinqit-2-scaled.jpeg" alt="Investment Banking">
             </div>
             
             <!-- Text Section -->
             <div class="goal-text w-[100%]">
                 <!-- Group Savings Text -->
-                <div class="max-w-2xl mx-auto p-8">
+                <div class="max-w-2xl mx-auto space-y-5">
                     <h1 class="text-4xl font-bold text-orange-600">How to Open Your Advantage Account?</h1>
                     <p class="mt-2 text-gray-600">
                         Anyone with a U.S. checking account can easily begin saving by transferring funds to an Advantage account to achieve their financial goals.
@@ -237,13 +246,13 @@
             </div> 
         </div>
 
-        <div id="goal" class="goal flex flex-col md:flex-row mt-[50px] gap-16">
+        <div id="goal" class="goal flex flex-col-reverse lg:flex-row mt-[100px] gap-10">
             <!-- Text Section -->
             <div class="goal-text w-[100%]">
                 <!-- Group Savings Text -->
-                <div class="max-w-2xl mx-auto p-8">
+                <div class="max-w-2xl mx-auto">
                     <h1 class="text-4xl font-bold text-orange-600">Gain An Advantage to Your Financial Dreams</h1>
-                    <p class="mt-4 text-gray-600">
+                    <p class="mt-2 text-gray-600">
                         Advantage Direct Savings – a financial service of FVCbank, an FDIC-insured institution – is a fee-free savings account with a high annual percentage yield (APY) that helps you grow your savings securely. Banking with Advantage Direct Savings comes with exceptional service and performance:
                     </p>
                     <ul class="list-disc list-inside mt-4 text-white">
@@ -259,7 +268,7 @@
             </div> 
 
              <!-- Image Section -->
-             <div class="w-[100%] mt-32">
+             <div class="w-[100%]">
                 <img src="http://advantage.fvcbank.com/wp-content/uploads/2024/05/adv-bodypic-5.jpg" alt="Investment Banking">
             </div>
         </div>

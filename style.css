@@ -225,36 +225,26 @@ html{
     height: 120vh;
     margin-bottom: 10px;
 }
-.showcase .showcase-content{
-    max-width: 850px;
-    margin-top: 15%;
-    padding: 0 95px;
-   /* padding: 30px; */
-}
+
 .showcase .showcase-content h1{
     color: #55BA53;
-    font-size: 3.1rem;
+    /* font-size: 3.1rem; */
     margin-top: 15px 0;
     font-weight: 600;
    
 }
 .showcase .showcase-content span{
     color: #fff;
-    font-family: 'Verdana', sans-serif;
+    /* font-family: 'Verdana', sans-serif; */
     font-weight: 700;
 }
-.showcase .showcase-content p{
-    color: #ceced4;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    text-align: justify;
-}
-.showcase .showcase-content .btn-left{
+
+/* .showcase .showcase-content .btn-left{
     background: linear-gradient(to right, #0a3609 , #55BA53);
 }
 .showcase .showcase-content .btn-right{
     background: linear-gradient(to right,#55BA53, #0a3609);
-}
+} */
   
 
 .bxl-apple{
@@ -446,10 +436,10 @@ input {
 /* Portfolio Section Styling  */
 #portfolio{
     background: #0A2940;
-    justify-content: center;
+    /* justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 .portfolio h3{
     color: #95A2BB;
@@ -461,7 +451,7 @@ input {
     font-size: 40px;
     font-weight: 600;
     color: #95A2BB;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .portfolio h2 span{
     font-weight: 500;
@@ -469,7 +459,7 @@ input {
 .portfolio p{
     color: #95A2BB;
     line-height: 1.6;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 /* .owl-carousel .item img{
     display: block;
