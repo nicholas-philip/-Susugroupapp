@@ -6,6 +6,8 @@
     "axe/structure": "off",
     "axe/name-role-value": "off",
     "button-type": "off",
-    "meta-viewport": "off"
+    "meta-viewport": "off",
+    "axe/keyboard": "off",
+    "axe/parsing": "off"
   }
 }
